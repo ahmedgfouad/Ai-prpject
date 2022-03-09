@@ -1,0 +1,56 @@
+import 'dart:io';
+import 'dart:math';
+
+import 'package:first/first.dart' as first;
+import 'package:test/expect.dart';
+
+void main(List<String> arguments) {
+
+  double The_result;
+   print("Enter first number ");
+   double? first_num=double.parse(stdin.readLineSync()!);
+
+   print("Enter type of arithmetic ");
+   String? char=stdin.readLineSync()!;
+
+  print("Enter second numbr ");
+  double? secound_number=double.parse(stdin.readLineSync()!);
+
+   switch(char)
+   {
+     case '+' :
+       {
+          The_result = first_num+secound_number;
+          print(The_result);
+       }
+       break;
+     case '-' :
+       {
+           The_result = first_num - secound_number;
+           print(The_result);
+       }
+       break;
+     case '*' :
+       {
+          The_result = first_num * secound_number;
+          print(The_result);
+       }
+       break;
+     case '/' :
+       {
+          The_result = first_num / secound_number;
+          print(The_result);
+       }
+       break;
+     case '%' :
+       {
+          The_result = first_num % secound_number;
+          print(The_result);
+       }
+       break;
+       default :{ print("Error");}
+   }
+
+
+
+}
